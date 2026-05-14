@@ -1,0 +1,162 @@
+@define-color bg1 #2E2E2E;
+@define-color bg2 #505050;
+@define-color txt1 #FFFFFF;
+@define-color txt2 #323232;
+@define-color rb1 #F7F680;
+@define-color rb2 #42C2FF;
+@define-color rb3 #FD7979;
+
+* {
+    all: unset;
+    font-family: 'Maple Mono NF CN ExtraBold';
+    font-size: 16px;
+}
+
+@keyframes rainbow_2s {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@keyframes rainbow_5s {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+tooltip {
+    color: @txt1;
+    border-radius: 20px;
+    background: repeating-linear-gradient(45deg,
+            @bg1 0%, @bg1 42.5%,
+            @bg2 42.5%, @bg2 57.5%,
+            @bg1 57.5%, @bg1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_2s 2s ease-in-out infinite;
+}
+
+tooltip label {
+    padding: 4px 12px;
+}
+
+#workspaces label {
+    font-size: 25px;
+}
+
+#workspaces button {
+    color: @txt1;
+    border-radius: 100px;
+    padding: 0 24px;
+    margin: 0 10px;
+    background: repeating-linear-gradient(90deg,
+            @bg1 0%, @bg1 42.5%,
+            @bg2 42.5%, @bg2 57.5%,
+            @bg1 57.5%, @bg1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_2s 2s ease-in-out infinite;
+    transition: all 0.25s cubic-bezier(0, 0, 1, 1);
+}
+
+#workspaces button.active {
+    color: @txt2;
+    padding: 0 36px;
+    background: repeating-linear-gradient(90deg,
+            @rb1 0%, @rb1 25%,
+            @rb2 25%, @rb2 50%,
+            @rb1 50%, @rb1 75%,
+            @rb3 75%, @rb3 100%);
+    background-size: 200% 100%;
+    animation: rainbow_5s 5s linear infinite;
+}
+
+#clock {
+    font-size: 25px;
+    color: @txt2;
+    border-radius: 100px;
+    padding: 0 26px;
+    background: repeating-linear-gradient(45deg,
+            @rb1 0%, @rb1 23.1%,
+            @rb2 23.1%, @rb2 38.5%,
+            @rb1 38.5%, @rb1 61.6%,
+            @rb3 61.6%, @rb3 77%,
+            @rb1 77%, @rb1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_5s 5s linear infinite;
+}
+
+#backlight {
+    font-size: 24px;
+    color: @txt1;
+    border-radius: 100px;
+    padding: 0 14px 0 20px;
+    margin: 0 10px;
+    background: repeating-linear-gradient(45deg,
+            @bg1 0%, @bg1 42.5%,
+            @bg2 42.5%, @bg2 57.5%,
+            @bg1 57.5%, @bg1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_2s 2s ease-in-out infinite;
+}
+
+#network {
+    color: @txt1;
+    border-radius: 100px;
+    margin: 0 10px;
+    background: repeating-linear-gradient(45deg,
+            @bg1 0%, @bg1 42.5%,
+            @bg2 42.5%, @bg2 57.5%,
+            @bg1 57.5%, @bg1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_2s 2s ease-in-out infinite;
+}
+
+#network.wifi {
+    font-size: 22px;
+    padding: 0 16px 0 20px;
+}
+
+#network.ethernet {
+    font-size: 23px;
+    padding: 0 13px 0 22px;
+}
+
+#network.disconnected {
+    font-size: 25px;
+    padding: 0 12px 0 21px;
+}
+
+#pulseaudio {
+    font-size: 22px;
+    padding: 0 17px 0 19px;
+    margin: 0 10px;
+    color: @txt1;
+    border-radius: 100px;
+    background: repeating-linear-gradient(45deg,
+            @bg1 0%, @bg1 42.5%,
+            @bg2 42.5%, @bg2 57.5%,
+            @bg1 57.5%, @bg1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_2s 2s ease-in-out infinite;
+}
+
+#bluetooth {
+    font-size: 25px;
+    color: @txt1;
+    border-radius: 100px;
+    padding: 0 9px 0 24px;
+    margin: 0 10px;
+    background: repeating-linear-gradient(45deg,
+            @bg1 0%, @bg1 42.5%,
+            @bg2 42.5%, @bg2 57.5%,
+            @bg1 57.5%, @bg1 100%);
+    background-size: 200% 100%;
+    animation: rainbow_2s 2s ease-in-out infinite;
+}

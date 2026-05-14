@@ -1,0 +1,99 @@
+{
+    "position": "top",
+    "height": 60,
+    "margin-top": 25,
+    "margin-bottom": 10,
+    "margin-left": 30,
+    "margin-right": 30,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "backlight",
+        "network",
+        "bluetooth",
+        "pulseaudio"
+    ],
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": 2
+        }
+    },
+    "clock": {
+        "tooltip": true,
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%Y.%m.%d}"
+    },
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": [
+            "󱩎 ",
+            "󱩏 ",
+            "󱩐 ",
+            "󱩑 ",
+            "󱩒 ",
+            "󱩓 ",
+            "󱩔 ",
+            "󱩕 ",
+            "󱩖 ",
+            "󰛨 "
+        ],
+        "tooltip-format": "{percent}%"
+    },
+    "network": {
+        "interval": 1,
+        "format": "{ifname}",
+        "format-wifi": "{icon}",
+        "format-icons": [
+            "󰤯 ",
+            "󰤟 ",
+            "󰤟 ",
+            "󰤟 ",
+            "󰤢 ",
+            "󰤢 ",
+            "󰤢 ",
+            "󰤥 ",
+            "󰤥 ",
+            "󰤨 "
+        ],
+        "format-ethernet": "󰈀 ",
+        "format-disconnected": " ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n  {bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip-format-ethernet": "{ifname}\n  {bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip-format-disconnected": "Disconnected"
+    },
+    "bluetooth": {
+        "format": " ",
+        "format-disabled": "󰂲 ",
+        "format-connected": "󰂰 ",
+        "tooltip-format": "{controller_alias} {controller_address}\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias} {controller_address}\n{num_connections} connected\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias} {device_address} {device_battery_percentage}%",
+        "on-click": "blueman-manager"
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": " ",
+        "format-icons": {
+            "default": [
+                " ",
+                " ",
+                " ",
+                " ",
+                " ",
+                " ",
+                " ",
+                " ",
+                " ",
+                " "
+            ]
+        },
+        "tooltip-format": "{volume}%",
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    }
+}

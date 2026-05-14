@@ -1,0 +1,109 @@
+configuration {
+    show-icons:                     true;
+    disable-history:                false;
+    location:                       0;
+    font:                           "Maple Mono NF CN Bold 14";
+    icon:                           "Papirus";
+}
+
+*{
+    BG:                            #1e1e1e;
+    FG:                            #ffffff;
+    BDR:                           #ffffff;
+    SELBG:                         #ffffff;
+}
+
+window {
+    background-color:               @BG;
+    text-color:                     @FG;
+    border:                         6px;
+    border-color:                   @BDR;
+    border-radius:                  60px;
+    width:                          500px;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+textbox-prompt-colon {
+    expand:                         false;
+    str:                            "";
+    text-color:                     @FG;
+    padding:                        8px 12px 8px 20px;
+}
+
+entry {
+    text-color:                     @FG;
+    placeholder-color:              @FG;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+    blink:                          true;
+    padding:                        8px;
+}
+
+inputbar {
+    children:                       [ textbox-prompt-colon, entry ];
+    background-color:               @BG;
+    text-color:                     @FG;
+    expand:                         false;
+    position:                       center;
+    padding:                        10px 0px 0px 0px;
+}
+
+listview {
+    background-color:               @BG;
+    border:                         0px;
+    columns:                        1;
+    lines:                          6;
+    scrollbar:                      false;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @BG;
+    children:                       [ inputbar, listview ];
+    spacing:                        30px;
+    padding:                        36px;
+}
+
+element {
+    orientation:                    horizontal;
+    border-radius:                  100%;
+    padding:                        18px;
+}
+
+element normal.normal {
+    background-color:		        transparent;
+    text-color:                     @FG;
+}
+
+element alternate.normal {
+    background-color:		        transparent;
+    text-color:                     @FG;
+}
+
+element selected.normal {
+    background-color:               @SELBG;
+    text-color:                     @BG;
+    border-radius:                  100%;
+}
+
+element-icon {
+    background-color: 	            inherit;
+    text-color:                     inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           32px;
+}
+
+element-text {
+    background-color:               inherit;
+    text-color:                     inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0px 0px 0px 12px;
+}
