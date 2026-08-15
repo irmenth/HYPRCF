@@ -1,0 +1,9 @@
+{
+    "systemTray": false,
+    "systemStats": false,
+    "clock": false,
+    "bluetooth": false,
+    "networking": false,
+    "volume": false,
+    "brightness": false
+}

@@ -1,0 +1,9 @@
+SystemStats 1.0 system-stats.qml
+HyprWorkspace 1.0 hypr-workspace.qml
+Clock 1.0 clock.qml
+SystemTray 1.0 system-tray.qml
+Bluetooth 1.0 bluetooth.qml
+Networking 1.0 networking.qml
+Volume 1.0 volume.qml
+Brightness 1.0 brightness.qml
+NotificationButton 1.0 notification-button.qml

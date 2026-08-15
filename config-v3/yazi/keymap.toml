@@ -1,0 +1,23 @@
+[mgr]
+prepend_keymap = [
+    { 
+        on = ["<S-f>", "h", "f"],
+        run = "shell --block '~/.config/yazi/exec-sh/fuzzy-search-home-file.sh'",
+        desc = "Home file fuzzy search"
+    },
+    { 
+        on = ["<S-f>", "h", "d"],
+        run = "shell --block '~/.config/yazi/exec-sh/fuzzy-search-home-dir.sh'",
+        desc = "Home directory fuzzy search"
+    },
+    { 
+        on = ["<S-f>", "r", "f"],
+        run = "shell --block '~/.config/yazi/exec-sh/fuzzy-search-root-file.sh'",
+        desc = "Root file fuzzy search"
+    },
+    { 
+        on = ["<S-f>", "r", "d"],
+        run = "shell --block '~/.config/yazi/exec-sh/fuzzy-search-root-dir.sh'",
+        desc = "Root directory fuzzy search"
+    },
+]

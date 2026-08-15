@@ -1,0 +1,10 @@
+module Modules
+
+singleton BarWidgetsExpandStats 1.0 bar/widgets-expand-stats.qml
+Bar 1.0 bar/bar.qml
+singleton AppList 1.0 applauncher/app-list.qml
+Applauncher 1.0 applauncher/applauncher.qml
+Notifications 1.0 notifications/notifications.qml
+NotifPopup 1.0 notifications/notif-popup.qml
+NotifCenter 1.0 notifications/notif-center.qml
+Clipboard 1.0 clipboard/clipboard.qml

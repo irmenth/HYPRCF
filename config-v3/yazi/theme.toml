@@ -1,0 +1,5 @@
+[icon]
+prepend_dirs = [
+	{ name = "Projects", text = "", fg = "#00bcd4" },
+	{ name = "pkgbuilds", text = "", fg = "#ff9800" }
+]

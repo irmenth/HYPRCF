@@ -1,0 +1,7 @@
+[mgr]
+show_hidden = true
+
+[opener]
+edit = [
+	{ run = "$EDITOR %s", block = true, for = "unix" },
+]

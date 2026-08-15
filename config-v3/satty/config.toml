@@ -1,0 +1,8 @@
+[general]
+floating-hack = false
+output-filename = "~/Pictures/Screenshots/screenshot-%Y-%m-%d_%H-%M-%S.png"
+early-exit = ["save", "save-as"]
+
+[font]
+family = "Maple Mono NF CN"
+style = "Medium"
