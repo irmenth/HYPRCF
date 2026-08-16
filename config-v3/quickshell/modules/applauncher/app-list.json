@@ -1,13 +1,17 @@
 {
-    "google-chrome": 197,
-    "code": 173,
-    "Clash Verge": 87,
+    "google-chrome": 198,
+    "code": 177,
+    "Clash Verge": 88,
     "kitty": 1,
     "qt6ct": 6,
     "qt5ct": 2,
     "nwg-look": 4,
     "fcitx5-configtool": 6,
-    "qq": 24,
+    "qq": 25,
     "kvantummanager": 1,
-    "com.obsproject.Studio": 2
+    "com.obsproject.Studio": 6,
+    "mpv": 3,
+    "org.gnome.Showtime": 1,
+    "vlc": 1,
+    "org.inkscape.Inkscape": 1
 }

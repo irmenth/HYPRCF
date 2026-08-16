@@ -377,21 +377,14 @@ hl.window_rule({
     -- Floating windows
     name  = "floating-windows",
     match = {
-        initial_title = "^(satty|打开文件|打开文件夹)$",
+        initial_title = "^(satty|打开文件|打开文件夹|termfilechooser)$",
     },
     float = true
 })
 
 hl.layer_rule({
     match = {
-        namespace = "^quickshell-notification-center$",
-    },
-    blur = true,
-})
-
-hl.layer_rule({
-    match = {
-        namespace = "^quickshell-clipboard$",
+        namespace = "^(quickshell-notification-center|quickshell-clipboard)$",
     },
     blur = true,
 })
