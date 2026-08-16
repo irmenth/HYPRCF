@@ -20,4 +20,14 @@ prepend_keymap = [
         run = "shell --block '~/.config/yazi/exec-sh/fuzzy-search-root-dir.sh'",
         desc = "Root directory fuzzy search"
     },
+
+    # Yazi yank -> Wayland system clipboard
+    {
+        on = "y",
+        run = [
+            'shell -- for path in %s; do echo "file://$path"; done | wl-copy -t text/uri-list',
+            "yank"
+        ],
+        desc = "Yank and copy to system clipboard"
+    },
 ]

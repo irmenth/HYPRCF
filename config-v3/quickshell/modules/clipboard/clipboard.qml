@@ -524,7 +524,7 @@ Item {
                                 horizontalAlignment: Text.AlignHCenter
                                 font {
                                     family: Colors.font
-                                    pixelSize: 22
+                                    pixelSize: 24
                                 }
                                 color: Colors.fg5
                                 text: "󰈔"
