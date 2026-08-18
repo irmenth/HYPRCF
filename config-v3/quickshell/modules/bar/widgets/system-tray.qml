@@ -487,16 +487,19 @@ Rectangle {
                                                 return "";
                                             }
 
-                                            const iconPath = term.modelData.icon;
-                                            if (iconPath.startsWith("image://")) {
-                                                if (iconPath === "image://icon/input-keyboard") {
-                                                    return "/usr/share/icons/Papirus-Dark/16x16/devices/input-keyboard.svg";
-                                                }
-                                                return iconPath;
+                                            const icon = term.modelData.icon;
+                                            if (icon === "image://icon/input-keyboard" || icon === "input-keyboard") {
+                                                return "/usr/share/icons/Papirus-Dark/16x16/devices/input-keyboard.svg";
                                             }
-                                            return Quickshell.iconPath(iconPath);
+                                            // Paths and URLs load directly; failures are caught by status.
+                                            if (icon.startsWith("image://") || icon.startsWith("file://") || icon.includes("/"))
+                                                return icon;
+                                            // Bare names: the check overload returns "" when the icon is
+                                            // not in the theme, so garbage never reaches the provider.
+                                            return Quickshell.iconPath(icon, true);
                                         }
-                                        visible: term.hasIcon
+                                        // Only show when the source has actually loaded successfully.
+                                        visible: term.hasIcon && status === Image.Ready
                                     }
                                     Text {
                                         Layout.alignment: Qt.AlignVCenter
@@ -650,15 +653,19 @@ Rectangle {
                     height: 32
                 }
                 source: {
-                    const iconPath = trayIcon.modelData.icon;
-                    if (iconPath.startsWith("image://")) {
-                        if (iconPath === "image://icon/input-keyboard-symbolic") {
-                            return "/usr/share/icons/Papirus-Dark/16x16/devices/input-keyboard.svg";
-                        }
-                        return iconPath;
+                    const icon = trayIcon.modelData.icon;
+                    if (icon === "image://icon/input-keyboard-symbolic" || icon === "input-keyboard-symbolic") {
+                        return "/usr/share/icons/Papirus-Dark/16x16/devices/input-keyboard.svg";
                     }
-                    return Quickshell.iconPath(iconPath);
+                    // Paths and URLs load directly; failures are caught by status.
+                    if (icon.startsWith("image://") || icon.startsWith("file://") || icon.includes("/"))
+                        return icon;
+                    // Bare names: the check overload returns "" when the icon is
+                    // not in the theme, so garbage never reaches the provider.
+                    return Quickshell.iconPath(icon, true);
                 }
+                // Only show when the source has actually loaded successfully.
+                visible: status === Image.Ready
             }
 
             MouseArea {

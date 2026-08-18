@@ -325,16 +325,20 @@ Item {
                                 Layout.alignment: Qt.AlignCenter
                                 Layout.preferredWidth: 72
                                 Layout.preferredHeight: 72
+                                // Only show when the source has actually loaded successfully.
+                                visible: status === Image.Ready
                                 sourceSize {
                                     width: 128
                                     height: 128
                                 }
                                 source: {
-                                    const iconPath = app.modelData.icon;
-                                    if (iconPath.startsWith("image://")) {
-                                        return iconPath;
-                                    }
-                                    return Quickshell.iconPath(iconPath);
+                                    const icon = app.modelData.icon;
+                                    // Paths and URLs load directly; failures are caught by status.
+                                    if (icon.startsWith("image://") || icon.startsWith("file://") || icon.includes("/"))
+                                        return icon;
+                                    // Bare names: the check overload returns "" when the icon is
+                                    // not in the theme, so garbage never reaches the provider.
+                                    return Quickshell.iconPath(icon, true);
                                 }
                             }
                             Item {

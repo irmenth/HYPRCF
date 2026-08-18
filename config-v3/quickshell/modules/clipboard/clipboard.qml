@@ -563,11 +563,23 @@ Item {
 
                             Image {
                                 Layout.alignment: Qt.AlignVCenter
-                                Layout.preferredWidth: Math.min(90, sourceSize.width * 55 / sourceSize.height)
+                                // Guard against 0x0 sourceSize from failed loads producing NaN widths
+                                Layout.preferredWidth: sourceSize.width > 0 && sourceSize.height > 0
+                                    ? Math.min(90, sourceSize.width * 55 / sourceSize.height)
+                                    : 0
                                 Layout.preferredHeight: 55
                                 asynchronous: true
-                                visible: clipItem.modelData.type === "image"
-                                source: clipItem.modelData.content.split("\n")[0]
+                                // Only show when the source has actually loaded successfully.
+                                visible: clipItem.modelData.type === "image" && status === Image.Ready
+                                source: {
+                                    const src = clipItem.modelData.content.split("\n")[0];
+                                    // Paths and URLs load directly; failures are caught by status.
+                                    if (src.startsWith("image://") || src.startsWith("file://") || src.includes("/"))
+                                        return src;
+                                    // Bare names: the check overload returns "" when the icon is
+                                    // not in the theme, so garbage never reaches the provider.
+                                    return Quickshell.iconPath(src, true);
+                                }
                             }
 
                             Rectangle {

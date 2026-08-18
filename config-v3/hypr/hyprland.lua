@@ -18,6 +18,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal           = "kitty"
 local fileManager        = "kitty -e yazi"
+local music              = "kitty -e musicfox"
 local menu               = "quickshell:toggle-applauncher"
 local notificationcenter = "quickshell:toggle-notification-center"
 local clipboard          = "quickshell:toggle-clipboard"
@@ -194,7 +195,7 @@ hl.gesture({
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 hl.device({
     name          = "yjx-chip-eweadn-e7-mouse",
-    sensitivity   = -0.32,
+    sensitivity   = -0.25,
     accel_profile = "flat"
 })
 
@@ -230,8 +231,9 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(music))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + M",
+hl.bind(mainMod .. " + D",
     hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
@@ -377,9 +379,19 @@ hl.window_rule({
     -- Floating windows
     name  = "floating-windows",
     match = {
-        initial_title = "^(satty|打开文件|打开文件夹|termfilechooser)$",
+        initial_title = "^satty$",
     },
     float = true
+})
+
+hl.window_rule({
+    -- Floating termfilechooser
+    name  = "floating-termfilechooser",
+    match = {
+        initial_title = "^termfilechooser$",
+    },
+    float = true,
+    size  = { 1200, 800 }
 })
 
 hl.layer_rule({

@@ -98,7 +98,10 @@ PanelWindow {
                     Layout.alignment: Qt.AlignVCenter
                     Layout.preferredWidth: 32
                     Layout.preferredHeight: 32
-                    visible: hasIcon
+                    // Quickshell's icon provider returns a purple checkerboard for
+                    // unresolvable icons with status Ready, so only show when the
+                    // source has actually loaded successfully.
+                    visible: hasIcon && status === Image.Ready
                     sourceSize {
                         width: 64
                         height: 64
@@ -109,9 +112,12 @@ PanelWindow {
                         }
 
                         const icon = popup.notifRoot.popupItem.appIcon;
-                        if (icon.startsWith("image://"))
+                        // Paths and URLs load directly; failures are caught by status.
+                        if (icon.startsWith("image://") || icon.startsWith("file://") || icon.includes("/"))
                             return icon;
-                        return Quickshell.iconPath(icon);
+                        // Bare names: the check overload returns "" when the icon is
+                        // not in the theme, so garbage never reaches the provider.
+                        return Quickshell.iconPath(icon, true);
                     }
                 }
                 Text {
@@ -232,16 +238,26 @@ PanelWindow {
                 property bool hasIcon: (popup.notifRoot.popupItem?.image ?? "") !== ""
 
                 Layout.alignment: Qt.AlignHCenter
-                Layout.preferredWidth: Math.min(popupContentColumn.width, sourceSize.width * 110 / sourceSize.height)
+                // Guard against 0x0 sourceSize from failed loads producing NaN widths
+                Layout.preferredWidth: sourceSize.width > 0 && sourceSize.height > 0
+                    ? Math.min(popupContentColumn.width, sourceSize.width * 110 / sourceSize.height)
+                    : 0
                 Layout.preferredHeight: 110
                 source: {
                     if (!hasIcon) {
                         return "";
                     }
 
-                    return popup.notifRoot.popupItem.image;
+                    const src = popup.notifRoot.popupItem.image;
+                    // Paths and URLs load directly; failures are caught by status.
+                    if (src.startsWith("image://") || src.startsWith("file://") || src.includes("/"))
+                        return src;
+                    // Bare names: the check overload returns "" when the icon is
+                    // not in the theme, so garbage never reaches the provider.
+                    return Quickshell.iconPath(src, true);
                 }
-                visible: hasIcon
+                // Only show when the source has actually loaded successfully.
+                visible: hasIcon && status === Image.Ready
             }
         }
 
