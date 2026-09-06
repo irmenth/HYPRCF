@@ -1,0 +1,98 @@
+default_theme = "default"
+seek_interval_secs = 10
+lyric_gradient = "rainbow"
+proxy = "http://127.0.0.1:7890"
+proxy_target = "normal"
+search_limit = 100
+navigation_position = "left"
+splash_duration_secs = 1.0
+cli_status_template = "{name}  {artist}  {current}/{duration}  {status}  vol {volume}%"
+cli_status_format = "plain"
+
+[border]
+enabled = true
+rounded = false
+follow_corner_color = false
+border_gradient_speed = 0.0
+
+[logger]
+log_level = "DEBUG"
+
+[[navigation.sections]]
+title = "<accent>▎</accent> <accent>DISCOVER</accent>"
+items = [
+  { name = " 每日推荐", api = "recommend_songs" },
+  { name = " 推荐歌单", api = "recommend_resource" },
+  { name = " 热门歌手", api = "top_singers" },
+  { name = " 排行榜", api = "toplist" },
+  { name = " 歌单", api = "top_song_list" },
+  { name = " 电台", api = "user_radio_sublist" },
+  { name = " 搜索", api = "search" },
+]
+
+[[navigation.sections]]
+title = "<accent>▎</accent> <accent>MY MUSIC</accent>"
+items = [
+  { name = " 我喜欢的音乐", api = "liked" },
+  { name = " 我创建的歌单", api = "user_created_song_list" },
+  { name = " 我收藏的歌单", api = "user_subscribed_song_list" },
+  { name = " 我收藏的专辑", api = "album_sublist" },
+  { name = " 我的音乐云盘", api = "user_cloud_disk" },
+  { name = " 下载管理", api = "download" },
+  { name = " 本地音乐", api = "local_music" },
+  { name = " 最近播放", api = "recent" },
+]
+
+[cache]
+content_cache_ttl = 300
+cache_dir = "downloads"
+cache_template = "{name}-{singer}"
+quality = "exhigh"
+save_on_play = false
+
+[playerbar]
+filled_symbol = "━"
+unfilled_symbol = "─"
+filled_color = "accent"
+unfilled_color = "text"
+unfilled_color_cached = "error"
+layout = "default"
+
+[playerbar.visible]
+cover = true
+volume = true
+mode_icon = true
+spinner = true
+
+[titles]
+sidebar = "► NAVIGATION ◄"
+playlist = "► ♪ QUEUE ({count}) ◄"
+lyrics = "► ♪ LYRICS ◄"
+
+[columns]
+songs = [
+  { header = "TITLE", field = "name", min_width = 18 },
+  { header = "ARTIST", field = "singer", min_width = 16 },
+  { header = "ALBUM", field = "album", min_width = 12 },
+  { header = "DURATION", field = "duration", width = 9 },
+]
+songlist = [
+  { header = "NAME", field = "name", min_width = 20 },
+  { header = "AUTHOR", field = "author", min_width = 16 },
+]
+
+[columns.overrides]
+download = [
+  { header = "TITLE", field = "name", min_width = 18 },
+  { header = "ARTIST", field = "singer", min_width = 16 },
+]
+hotsearch = [{ header = "HOT SEARCH", field = "keyword", min_width = 1 }]
+toplist = [
+  { header = "NAME", field = "name", width = 20 },
+  { header = "DESCRIPTION", field = "description", min_width = 20 },
+]
+
+[source_fallback]
+enabled = true
+providers = ["kuwo", "kugou", "bilivideo", "youtube"]
+timeout_ms = 10000

@@ -1,0 +1,177 @@
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:02 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:02:04 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:02:04 DEBUG ncm_api::client] send_request status=200 OK, body(len=59489): "{\"code\":200,\"more\":false,\"artists\":[{\"name\":\"林俊杰\",\"id\":3684,\"picId\":109951168529051968,\"img1v1Id\":109951168529049969,\"briefDesc\":\"\",\"picUrl\":\"http://p4.music.126.net/78q0jUUJ0h08GxAs2G-tCA==/109951168"
+[2026-09-06 22:02:18 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:18 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:18 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:19 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:19 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:19 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:02:19 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:19 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:02:19 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:02:26 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:02:27 DEBUG ncm_api::client] send_request status=200 OK, body(len=60): "{\"code\":200,\"unikey\":\"35028fdf-353a-4fdb-9b56-db79de1d23c2\"}"
+[2026-09-06 22:02:29 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:31 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:33 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:35 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:37 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:39 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:41 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:43 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:45 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:47 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:49 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:51 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:53 DEBUG ncm_api::client] send_request status=200 OK, body(len=37): "{\"code\":801,\"message\":\"等待扫码\"}"
+[2026-09-06 22:02:55 DEBUG ncm_api::client] send_request status=200 OK, body(len=142): "{\"nickname\":\"LowrBIG\",\"avatarUrl\":\"https://p3.music.126.net/NolvTMHLDyh0db9sXdiAEQ==/109951164530583106.jpg\",\"code\":802,\"message\":\"授权中\"}"
+[2026-09-06 22:02:58 DEBUG ncm_api::client] send_request status=200 OK, body(len=43): "{\"code\":803,\"message\":\"授权登陆成功\"}"
+[2026-09-06 22:02:58 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:02:58 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:02:58 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:02:58 DEBUG ncm_api::client] send_request status=200 OK, body(len=68658): "{\"code\":200,\"data\":{\"fromCache\":false,\"dailySongs\":[{\"name\":\"星语心愿\",\"mainTitle\":null,\"additionalTitle\":null,\"id\":406346115,\"pst\":0,\"t\":0,\"ar\":[{\"id\":10584,\"name\":\"张柏芝\",\"tns\":[],\"alias\":[]}],\"alia\":[\"电影"
+[2026-09-06 22:03:43 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:43 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:43 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:43 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:43 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:45 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:03:45 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:45 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:03:45 WARN  pigma::ipc] ipc: another pigma instance already owns /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:03:45 DEBUG pigma::ipc] ipc: invalid request: EOF while parsing a value at line 1 column 0
+[2026-09-06 22:03:47 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:03:47 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:03:47 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:04:04 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:04 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:04 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:04 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:04 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:06 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:04:06 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:06 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:04:06 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:04:08 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:04:08 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:04:08 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:06:00 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:06:02 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:06:02 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:06:02 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:12:07 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:07 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:07 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:07 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:07 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:09 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:12:09 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:09 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:09 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:12:11 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:12:11 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:12:11 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:12:11 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:12:11 DEBUG ncm_api::client] send_request status=200 OK, body(len=68658): "{\"code\":200,\"data\":{\"fromCache\":false,\"dailySongs\":[{\"name\":\"星语心愿\",\"mainTitle\":null,\"additionalTitle\":null,\"id\":406346115,\"pst\":0,\"t\":0,\"ar\":[{\"id\":10584,\"name\":\"张柏芝\",\"tns\":[],\"alias\":[]}],\"alia\":[\"电影"
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:42 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:12:44 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:12:44 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:12:44 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:12:49 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:12:51 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:12:51 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:12:51 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:13:17 INFO  pigma::playback::engine] [HEAP] before resolve 星语心愿 (id=406346115): 14652 kB
+[2026-09-06 22:13:17 DEBUG reqwest::connect] starting new connection 'Some("p3.music.126.net")'
+[2026-09-06 22:13:17 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:13:17 DEBUG ncm_api::client] send_eapi path=/api/song/enhance/player/url/v1 status=200 OK body(len=1099): "{\"data\":[{\"id\":406346115,\"url\":\"http://m7.music.126.net/20260906223732/42e73101a90f087f9847d22b499b3c47/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3058596195/0260/2c64/3f1c/dd17224b02663534c1aa8c49abc201c9.m4a?vu"
+[2026-09-06 22:13:17 DEBUG ncm_api::client::song] songs_url_v1 raw response (first 500): "{\"data\":[{\"id\":406346115,\"url\":\"http://m7.music.126.net/20260906223732/42e73101a90f087f9847d22b499b3c47/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3058596195/0260/2c64/3f1c/dd17224b02663534c1aa8c49abc201c9.m4a?vuutv=hszZ9tIcS9LCLWCg409vWV5e16NW8JylopFIQNy67ToX2XfY9AWb7JA1lVVNYaTI8LroUKOzLg+Hk+DT48ZM3oV6ZTSQEdfvHKhK9ll5Hkc=\",\"br\":96003,\"size\":2464322,\"md5\":\"dd17224b02663534c1aa8c49abc201c9\",\"code\":200,\"expi\":1200,\"type\":\"m4a\",\"gain\":-10.4838,\"peak\":1.3143,\"closedGain\":-6.0,\"closedPeak\":1.0,\"fee\":8,\"uf\":null,"
+[2026-09-06 22:13:17 DEBUG reqwest::connect] starting new connection 'Some("m7.music.126.net")'
+[2026-09-06 22:13:17 DEBUG ncm_api::client] send_request status=200 OK, body(len=1300): "{\"sgc\":false,\"sfy\":false,\"qfy\":false,\"lyricUser\":{\"id\":3622467,\"status\":99,\"demand\":0,\"userid\":131783326,\"nickname\":\"kain_l\",\"uptime\":1507873238610},\"lrc\":{\"version\":10,\"lyric\":\"[00:00.000] 作词 : 傅佩嘉\\n"
+[2026-09-06 22:13:17 INFO  pigma::playback::engine] [HEAP] after resolve OK 星语心愿 (id=406346115): 15504 kB
+[2026-09-06 22:13:17 INFO  pigma::playback::player] opening audio device: pipewire
+[2026-09-06 22:13:17 DEBUG symphonia_core::probe] found a possible format marker within [66, 74, 79, 70, 69, 73, 6f, 6d, 0, 0, 2, 0, 69, 73, 6f, 6d] @ 0+6 bytes.
+[2026-09-06 22:13:17 DEBUG symphonia_core::probe] found the format marker [66, 74, 79, 70] @ 0+6 bytes.
+[2026-09-06 22:14:21 INFO  pigma::playback::player] [HEAP] after ControlCmd::Stop: 21264 kB
+[2026-09-06 22:14:21 INFO  pigma::playback::engine] [HEAP] before resolve DAY BY DAY (Japanese Ver.) (id=26089233): 21264 kB
+[2026-09-06 22:14:21 DEBUG reqwest::connect] starting new connection 'Some("p3.music.126.net")'
+[2026-09-06 22:14:21 DEBUG ncm_api::client] send_eapi path=/api/song/enhance/player/url/v1 status=200 OK body(len=1066): "{\"data\":[{\"id\":26089233,\"url\":\"http://m701.music.126.net/20260906223836/de2f070f7efbad45487cfe0fea057e0b/jdyyaac/535f/020b/525b/d5518a26015ad910cc29e1256af5fb82.m4a?vuutv=uYVrTjEwZAPx3Rtbpxmv3VebMOtjr"
+[2026-09-06 22:14:21 DEBUG ncm_api::client] send_request status=200 OK, body(len=4249): "{\"sgc\":false,\"sfy\":false,\"qfy\":false,\"transUser\":{\"id\":2203113,\"status\":99,\"demand\":1,\"userid\":124271229,\"nickname\":\"TaraSoCrazy\",\"uptime\":1453202984241},\"lrc\":{\"version\":15,\"lyric\":\"[00:00.00] 作词 : 間"
+[2026-09-06 22:14:21 DEBUG ncm_api::client::song] songs_url_v1 raw response (first 500): "{\"data\":[{\"id\":26089233,\"url\":\"http://m701.music.126.net/20260906223836/de2f070f7efbad45487cfe0fea057e0b/jdyyaac/535f/020b/525b/d5518a26015ad910cc29e1256af5fb82.m4a?vuutv=uYVrTjEwZAPx3Rtbpxmv3VebMOtjrigqQ9CR+Etups5Ec+Kn8xA6UeYYQXDm6BoeQOWsQxE53xbXfMepYQroXZ7f0i2Pmw2anF4YS7KU2W4=\",\"br\":96000,\"size\":2543461,\"md5\":\"d5518a26015ad910cc29e1256af5fb82\",\"code\":200,\"expi\":1200,\"type\":\"m4a\",\"gain\":-11.1486,\"peak\":1.6613,\"closedGain\":-6.0,\"closedPeak\":1.0,\"fee\":0,\"uf\":null,\"payed\":0,\"flag\":2064640,\"canExte"
+[2026-09-06 22:14:21 DEBUG reqwest::connect] starting new connection 'Some("m701.music.126.net")'
+[2026-09-06 22:14:21 INFO  pigma::playback::engine] [HEAP] after resolve OK DAY BY DAY (Japanese Ver.) (id=26089233): 22132 kB
+[2026-09-06 22:14:21 DEBUG symphonia_core::probe] found a possible format marker within [66, 74, 79, 70, 69, 73, 6f, 6d, 0, 0, 2, 0, 69, 73, 6f, 6d] @ 0+6 bytes.
+[2026-09-06 22:14:21 DEBUG symphonia_core::probe] found the format marker [66, 74, 79, 70] @ 0+6 bytes.
+[2026-09-06 22:17:50 INFO  pigma::playback::player] [HEAP] song finished (playback complete): 21416 kB
+[2026-09-06 22:17:50 INFO  pigma::playback::player] [HEAP] after player drop on finish: 21416 kB
+[2026-09-06 22:17:50 INFO  pigma::playback::player] [HEAP] after ControlCmd::Stop: 21416 kB
+[2026-09-06 22:17:50 INFO  pigma::playback::engine] [HEAP] before resolve 潇洒走一回 (id=406089324): 21416 kB
+[2026-09-06 22:17:50 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:17:50 DEBUG reqwest::connect] starting new connection 'Some("p3.music.126.net")'
+[2026-09-06 22:17:50 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:17:50 DEBUG ncm_api::client] send_eapi path=/api/song/enhance/player/url/v1 status=200 OK body(len=1106): "{\"data\":[{\"id\":406089324,\"url\":\"http://m801.music.126.net/20260906224205/eb8a96482f20c09c68cde97178b00385/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/30093047361/2194/3440/fcd7/1a77750da94d225cf2a717d1cd10888e.m"
+[2026-09-06 22:17:50 DEBUG ncm_api::client::song] songs_url_v1 raw response (first 500): "{\"data\":[{\"id\":406089324,\"url\":\"http://m801.music.126.net/20260906224205/eb8a96482f20c09c68cde97178b00385/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/30093047361/2194/3440/fcd7/1a77750da94d225cf2a717d1cd10888e.m4a?vuutv=fhXdAcAkmQ7YYRVercVzyBA3iTzog/e/W+J7opQH/WTMapgy7QTIW+Ky5YFDR6/++6v3vh21lYIPoLYjO5D1JfQDNpVHc5/OOKLsm0wtrwE=\",\"br\":96008,\"size\":3075389,\"md5\":\"1a77750da94d225cf2a717d1cd10888e\",\"code\":200,\"expi\":1200,\"type\":\"m4a\",\"gain\":-3.6935,\"peak\":1.0057,\"closedGain\":-6.0,\"closedPeak\":0.9169,\"fee\":8,\"uf"
+[2026-09-06 22:17:50 DEBUG reqwest::connect] starting new connection 'Some("m801.music.126.net")'
+[2026-09-06 22:17:50 DEBUG ncm_api::client] send_request status=200 OK, body(len=1478): "{\"sgc\":false,\"sfy\":false,\"qfy\":false,\"lyricUser\":{\"id\":2593952,\"status\":99,\"demand\":0,\"userid\":580392555,\"nickname\":\"时光网事\",\"uptime\":1517627077135},\"lrc\":{\"version\":11,\"lyric\":\"[00:00.00] 作词 : 陈乐融/王蕙玲\\"
+[2026-09-06 22:17:51 INFO  pigma::playback::engine] [HEAP] after resolve OK 潇洒走一回 (id=406089324): 22060 kB
+[2026-09-06 22:17:51 DEBUG symphonia_core::probe] found a possible format marker within [66, 74, 79, 70, 4d, 34, 41, 20, 0, 0, 2, 0, 4d, 34, 41, 20] @ 0+6 bytes.
+[2026-09-06 22:17:51 DEBUG symphonia_core::probe] found the format marker [66, 74, 79, 70] @ 0+6 bytes.
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:31:47 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:31:48 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:31:48 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:31:48 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:31:48 DEBUG ncm_api::client] send_request status=200 OK, body(len=68658): "{\"code\":200,\"data\":{\"fromCache\":false,\"dailySongs\":[{\"name\":\"星语心愿\",\"mainTitle\":null,\"additionalTitle\":null,\"id\":406346115,\"pst\":0,\"t\":0,\"ar\":[{\"id\":10584,\"name\":\"张柏芝\",\"tns\":[],\"alias\":[]}],\"alia\":[\"电影"
+[2026-09-06 22:31:48 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 DEBUG pigma::app::builder] ImageProtocol::Kitty
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 DEBUG rustls_platform_verifier::verification::others] Loaded 121 CA root certificates from the system
+[2026-09-06 22:32:33 INFO  pigma::ipc] ipc: listening on /home/kiki/.cache/pigma/pigma.sock
+[2026-09-06 22:32:34 DEBUG reqwest::connect] starting new connection 'Some("music.163.com")'
+[2026-09-06 22:32:34 DEBUG ncm_api::client] send_request status=200 OK, body(len=1167): "{\"code\":200,\"account\":{\"id\":2010569846,\"userName\":\"1_********521\",\"type\":1,\"status\":0,\"whitelistAuthority\":0,\"createTime\":1570899528114,\"tokenVersion\":3,\"ban\":0,\"baoyueVersion\":0,\"donateVersion\":0,\"vi"
+[2026-09-06 22:32:34 DEBUG ncm_api::client] send_request status=200 OK, body(len=48): "{\"ids\":[],\"checkPoint\":1788697836145,\"code\":200}"

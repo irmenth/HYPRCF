@@ -4,10 +4,17 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
+    output   = "eDP-1",
     mode     = "2560x1600@165",
     position = "auto",
-    scale    = "1",
+    scale    = 1,
+})
+
+hl.monitor({
+    output   = "",
+    mode     = "preferred",
+    position = "auto",
+    scale    = 1,
 })
 
 
@@ -17,14 +24,14 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal           = "kitty"
-local fileManager        = "kitty -e yazi"
-local music              = "kitty -e musicfox"
+local fileManager        = "kitty yazi"
+local music              = "kitty pigma"
 local menu               = "quickshell:toggle-applauncher"
 local notificationcenter = "quickshell:toggle-notification-center"
 local clipboard          = "quickshell:toggle-clipboard"
 local screenshot         = "~/.config/hypr/exec-sh/screenshot-satty.sh"
-local sysInfo            = "kitty -e sudo btop"
-local nvInfo             = "kitty -e sudo nvtop"
+local sysInfo            = "kitty sudo btop"
+local nvInfo             = "kitty sudo nvtop"
 
 -------------------
 ---- AUTOSTART ----
@@ -39,9 +46,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("sudo nvidia-smi -lgc 1500,3105")
     hl.exec_cmd("awww-daemon")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
-    hl.exec_cmd("~/.config/hypr/exec-sh/start-xdph.sh")
     hl.exec_cmd("fcitx5 --replace -d")
-    hl.exec_cmd("prime-run env QSG_RENDER_LOOP=threaded  quickshell")
+    hl.exec_cmd("prime-run env QSG_RENDER_LOOP=threaded quickshell")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
     hl.exec_cmd("wl-clip-persist --clipboard regular")
@@ -65,14 +71,16 @@ hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 
 hl.env("GDK_BACKEND", "wayland,x11,*")
 hl.env("SDL_VIDEODRIVER", "wayland")
-hl.env("CLUTTER_BACKEND", "wayland")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 
 hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 
-hl.env("CLIPHIST_DB_PATH", "$XDG_RUNTIME_DIR/cliphist/db")
+hl.env(
+    "CLIPHIST_DB_PATH",
+    os.getenv("XDG_RUNTIME_DIR") .. "/cliphist/db"
+)
 
 
 -----------------------
@@ -107,7 +115,8 @@ hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
         column_width             = window_width,
-        follow_min_visible       = 0.2,
+        explicit_column_widths   = "0.5, 0.667, 1.0",
+        follow_min_visible       = 1,
     },
 
     decoration = {
@@ -138,16 +147,16 @@ hl.config({
 hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
 
 -- Default springs
-hl.curve("natrual", { type = "spring", mass = 1, stiffness = 360, dampening = 24 })
+hl.curve("natural", { type = "spring", mass = 1, stiffness = 360, dampening = 24 })
 
 hl.animation({ leaf = "fade", enabled = true, speed = 1, bezier = "linear" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 1, spring = "natrual", style = "slide left" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 1, spring = "natrual", style = "slide right" })
-hl.animation({ leaf = "windowsMove", enabled = true, speed = 1, spring = "natrual" })
-hl.animation({ leaf = "layersIn", enabled = true, speed = 1, spring = "natrual", style = "slide bottom" })
-hl.animation({ leaf = "layersOut", enabled = true, speed = 1, spring = "natrual", style = "slide top" })
-hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1, spring = "natrual", style = "slide bottom" })
-hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1, spring = "natrual", style = "slide top" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 1, spring = "natural", style = "slide left" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 1, spring = "natural", style = "slide right" })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = 1, spring = "natural" })
+hl.animation({ leaf = "layersIn", enabled = true, speed = 1, spring = "natural", style = "slide bottom" })
+hl.animation({ leaf = "layersOut", enabled = true, speed = 1, spring = "natural", style = "slide top" })
+hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1, spring = "natural", style = "slide bottom" })
+hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1, spring = "natural", style = "slide top" })
 
 
 ----------------
@@ -195,7 +204,7 @@ hl.gesture({
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 hl.device({
     name          = "yjx-chip-eweadn-e7-mouse",
-    sensitivity   = -0.25,
+    sensitivity   = -0.3,
     accel_profile = "flat"
 })
 
@@ -262,20 +271,7 @@ hl.bind(mainMod .. " + SHIFT + up", hl.dsp.layout("consume_or_expel prev"))
 hl.bind(mainMod .. " + SHIFT + down", hl.dsp.layout("consume_or_expel next"))
 
 -- Expand or shrink current window
-hl.bind(mainMod .. " + SHIFT + E", function()
-    local win = hl.get_active_window()
-    local mon = hl.get_active_monitor()
-
-    if not win or not mon then
-        return
-    end
-
-    if win.size.x >= mon.width * 0.9 then
-        hl.dispatch(hl.dsp.layout("colresize " .. window_width))
-    else
-        hl.dispatch(hl.dsp.layout("colresize 1.0"))
-    end
-end)
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.layout("colresize +conf"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
@@ -346,7 +342,7 @@ hl.window_rule({
 
 hl.window_rule({
     -- Customize floating windows.
-    name        = "customize-floating-windwos",
+    name        = "customize-floating-windows",
     match       = {
         float = true,
     },
@@ -379,7 +375,7 @@ hl.window_rule({
     -- Floating windows
     name  = "floating-windows",
     match = {
-        initial_title = "^satty$",
+        initial_title = "^(satty|Select what to share)$",
     },
     float = true
 })
