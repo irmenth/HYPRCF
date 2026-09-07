@@ -399,7 +399,7 @@ hl.layer_rule({
 
 hl.layer_rule({
     match = {
-        namespace = "^selection$",
+        namespace = "^(selection|hyprpicker)$",
     },
     no_anim = true
 })
