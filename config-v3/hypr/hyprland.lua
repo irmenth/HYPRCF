@@ -368,7 +368,7 @@ hl.window_rule({
         float         = false,
         modal         = false,
     },
-    scrolling_width = 1.0,
+    scrolling_width = 0.667,
 })
 
 hl.window_rule({
