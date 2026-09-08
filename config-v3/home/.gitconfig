@@ -1,0 +1,7 @@
+[user]
+	email = napki.re@gmail.com
+	name = irmenth
+[credential]
+	helper = cache
+[url "git@github.com:"]
+	insteadOf = https://github.com/
