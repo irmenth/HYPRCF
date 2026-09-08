@@ -1,0 +1,12 @@
+# AUR / archlinuxcn 仓库外部包清单
+# 生成自: pacman -Qm
+# 这些包需启用 archlinuxcn 仓库 + paru（见 README.md）
+
+clash-verge-rev-bin 2.5.2-1
+google-chrome 152.0.7977.82-1
+linuxqq 5:3.2.33_52892-1
+mpv-modernz 0.3.3-1
+visual-studio-code-bin 1.136.1-1
+
+# --- 配置引用但可选（hyprland.lua 有 fallback，不装也能正常退出）---
+# hyprshutdown
