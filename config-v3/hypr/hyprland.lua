@@ -171,18 +171,6 @@ hl.config({
 
 
 ---------------
----- DEBUG ----
----------------
-
-hl.config({
-    debug = {
-        disable_logs = false,
-        disable_time = false,
-    },
-})
-
-
----------------
 ---- INPUT ----
 ---------------
 
