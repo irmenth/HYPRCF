@@ -111,13 +111,7 @@ PanelWindow {
                             return "";
                         }
 
-                        const icon = popup.notifRoot.popupItem.appIcon;
-                        // Paths and URLs load directly; failures are caught by status.
-                        if (icon.startsWith("image://") || icon.startsWith("file://") || icon.includes("/"))
-                            return icon;
-                        // Bare names: the check overload returns "" when the icon is
-                        // not in the theme, so garbage never reaches the provider.
-                        return Quickshell.iconPath(icon, true);
+                        return ImageUtils.resolveSource(popup.notifRoot.popupItem.appIcon);
                     }
                 }
                 Text {
@@ -248,13 +242,7 @@ PanelWindow {
                         return "";
                     }
 
-                    const src = popup.notifRoot.popupItem.image;
-                    // Paths and URLs load directly; failures are caught by status.
-                    if (src.startsWith("image://") || src.startsWith("file://") || src.includes("/"))
-                        return src;
-                    // Bare names: the check overload returns "" when the icon is
-                    // not in the theme, so garbage never reaches the provider.
-                    return Quickshell.iconPath(src, true);
+                    return ImageUtils.resolveSource(popup.notifRoot.popupItem.image);
                 }
                 // Only show when the source has actually loaded successfully.
                 visible: hasIcon && status === Image.Ready

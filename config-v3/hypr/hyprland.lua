@@ -4,7 +4,7 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "eDP-1",
+    output   = "desc:California Institute of Technology 0x1606",
     mode     = "2560x1600@165",
     position = "auto",
     scale    = 1,
@@ -77,10 +77,9 @@ hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 
-hl.env(
-    "CLIPHIST_DB_PATH",
-    os.getenv("XDG_RUNTIME_DIR") .. "/cliphist/db"
-)
+hl.env("CLIPHIST_DB_PATH", os.getenv("XDG_RUNTIME_DIR") .. "/cliphist/db")
+
+hl.env("AQ_DRM_DEVICES", "/dev/dri/amd-igpu")
 
 
 -----------------------
@@ -167,6 +166,18 @@ hl.config({
     misc = {
         force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
+    },
+})
+
+
+---------------
+---- DEBUG ----
+---------------
+
+hl.config({
+    debug = {
+        disable_logs = false,
+        disable_time = false,
     },
 })
 

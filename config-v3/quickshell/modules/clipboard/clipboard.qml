@@ -571,15 +571,7 @@ Item {
                                 asynchronous: true
                                 // Only show when the source has actually loaded successfully.
                                 visible: clipItem.modelData.type === "image" && status === Image.Ready
-                                source: {
-                                    const src = clipItem.modelData.content.split("\n")[0];
-                                    // Paths and URLs load directly; failures are caught by status.
-                                    if (src.startsWith("image://") || src.startsWith("file://") || src.includes("/"))
-                                        return src;
-                                    // Bare names: the check overload returns "" when the icon is
-                                    // not in the theme, so garbage never reaches the provider.
-                                    return Quickshell.iconPath(src, true);
-                                }
+                                source: ImageUtils.resolveSource(clipItem.modelData.content.split("\n")[0])
                             }
 
                             Rectangle {

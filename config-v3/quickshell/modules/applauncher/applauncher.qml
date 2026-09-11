@@ -331,15 +331,7 @@ Item {
                                     width: 128
                                     height: 128
                                 }
-                                source: {
-                                    const icon = app.modelData.icon;
-                                    // Paths and URLs load directly; failures are caught by status.
-                                    if (icon.startsWith("image://") || icon.startsWith("file://") || icon.includes("/"))
-                                        return icon;
-                                    // Bare names: the check overload returns "" when the icon is
-                                    // not in the theme, so garbage never reaches the provider.
-                                    return Quickshell.iconPath(icon, true);
-                                }
+                                source: ImageUtils.resolveSource(app.modelData.icon)
                             }
                             Item {
                                 Layout.preferredWidth: 1

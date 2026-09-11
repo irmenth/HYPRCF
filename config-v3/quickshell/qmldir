@@ -1,1 +1,2 @@
 singleton Colors 1.0 colors.qml
+singleton ImageUtils 1.0 imageutils.qml

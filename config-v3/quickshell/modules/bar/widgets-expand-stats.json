@@ -1,5 +1,5 @@
 {
-    "systemTray": false,
+    "systemTray": true,
     "systemStats": false,
     "clock": false,
     "bluetooth": false,
